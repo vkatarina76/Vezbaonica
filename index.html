@@ -1,0 +1,177 @@
+<!DOCTYPE html>    
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Katarina Veljkovic">
+        <meta name="description" content="Ovo je stranica na kojoj vezbamo HTML">
+        <title>Moja prva stranica</title>
+        <link rel="icon" href="html5.png" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+        <article id="prva">
+            <header aria-label="glavna-navigacija">
+            <h1>Krenuli smo sa pravljenjem sajta</h1>
+        
+            <nav>
+            <ul>    
+                <li>
+                    <a href="#prva">Početak stranice</a>
+                </li>
+                <li>
+                    <a href="#druga">Nastavak stranice</a>
+                </li>
+                <li>
+                    <a href="forma.html">Formulari</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <img src="image/vuk.png" alt="Slika vuka" title="Ovo je slika vuka" height="300"  width="200">
+    <figure>
+        <figcaption>Ovo je kod</figcaption>
+        <p>
+            <code>
+                &lt;h1&gt;Zdravo svete!&lt;/h1&gt;
+            </code>
+        </p>
+    </figure>
+        <h2>Lako je učiti HTML</h2>
+        <p>Danas ću baš dosta naučiti</p>
+        <h3>Dosta lekcija ima</h3>
+        <p>Ali, probam da završim do sledeće nedelje
+            <br>Ovde vežbam prelom teksta
+            <br>Imamo još jedan prelom teksta
+            <br>&nbsp;&nbsp;&nbsp;...
+        </p>
+        </article>
+        <hr>
+        <main>
+<article id="druga">
+        <h2>Ovo je drugi podnaslov</h2>
+        <p>Baš je bezveze da drugačije <em>radiš neke stvari.</em></p>
+        <p>Baš da naučim i taj <abbr title="React Novo">React</abbr></p>
+        <p><a href="youtube.com">Link ka Youtube</a></p>
+        <section>
+            <h3>Potpuno nova slika Cene</h3>
+        <figure>
+            <p><img src="image/cena.jpg" alt="Ovo je cena" title="cena" width="300" height="300" loading="lazy"></p>
+            <figcaption>
+                Ovo je slika cene
+            </figcaption>     
+        </figure>
+        </section>
+        <section>
+        <ul>
+            <li>Prvi</li>
+            <li>Drugi</li>
+            <li>Treći</li>
+        </ul>
+        <h3>Lekcija</h3>
+        <p>Baš ima 10 lekcija.</p>
+    <!-- nabrajanja rec, pa opis -->
+        <dl>
+            <dt>tagovi</dt>
+            <dd>jako važni</dd>
+
+            <dt>image</dt>
+            <dd>prikaz slike</dd>
+        </dl>
+        <p>Probaj da vidiš gradovi u kojima se ovo koristi:</p>
+        <address>Kragujevac
+            <br>  Beograd
+        </address>
+
+        <ol>
+            <li>Prvi</li>
+            <li>Drugi</li>
+            <li>Treći</li>
+        </ol>
+        <aside>
+            <details>
+                <summary>
+                    Koliko sati provodim u <mark>kodiranju?</mark>
+                </summary>
+                <p>
+                    Krenem ujutru u <time datetime="10:00">10</time>, i kodiram <time datetime="PT3H">3 sata.</time>
+                    <cite><a href="https://emojipedia.org/" target="_blank">Emoji sajt</a></cite>
+                </p>
+            </details>
+        </aside>
+    </section>
+        <h3>Sekcije</h3>
+        <p>Svaka lekcija ima dosta <strong>sekcija</strong></p>
+
+        <hr>
+        <!--section je zamenjeno sa article-->
+</article>
+<table>
+    <caption>Dnevni raspored kodiranja</caption>
+    <thead>
+    <tr>
+        <th>&nbsp;</th>
+        <th scope="col">Vreme</th>
+        <th scope="col">Aktivnost</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">Prepodne</th>
+        <td>
+            <time datetime="10:00">10am</time> - <time datetime="13:00">1pm</time>
+        </td>
+        <td>
+            <p>Napiši kod</p>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">Pauza</th>
+        <td>
+            <time datetime="13:00">1pm</time> - <time datetime="14:00">2pm</time>
+        </td>
+        <td>
+            <p>Lunch</p>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">Popodne</th>
+        <td>
+            <time datetime="14:00">2pm</time> - <time datetime="17:00">5pm</time>
+        </td>
+        <td>
+            <p>Coding again</p>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">Odmor</th>
+        <td colspan="2">Radim nesto drugo</td>
+    </tr>
+    <tr>
+        <th>Odmaram se</th>
+        <td rowspan="2">Ostalo</td>
+        <td>Slobodno vreme</td>
+    </tr>
+    <tr>
+        <th scope="row">Noc</th>
+        <td>Spavam</td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr>
+        <td colspan="3">Ovo je sto radim svaki dan!</td>
+    </tr>
+</tfoot>
+</table>
+    </main>
+    <footer>
+        <p>&lt;&lt;&lt; &copy; <a href="about.html">Katarina</a> &gt;&gt;&gt;</p>
+        <figure>
+            <img src="image/prodaja.png" alt="Prodaja" title="Prodaja"  height="300" width="250" loading="lazy">
+            <figcaption>Ovo je slika prodaje</figcaption>
+        </figure>
+        <p>
+            <a href="#">Vrati se na vrh</a>
+        </p>
+    </footer>
+    </body>
+</html>

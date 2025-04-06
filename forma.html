@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Katarina Veljkovic">
+    <meta name="description" content="Ovo je stranica sa formama">
+    <title>Ovo je stranica koja se bavi formom</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="icon" href="html5.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+            <a href="index.html">Pocetna strana</a>
+            </li>
+            <li><a href="about.html">O meni</a></li>
+            <li>
+                <a href="#contact">Kontakt</a>
+            </li>
+        </ul>
+    </nav>
+
+    <br>
+    <hr>
+    <article id="contact">
+        <h2>Kontaktiraj me!</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, rerum similique? Asperiores ipsa molestiae quae explicabo illo, ducimus cupiditate similique. Doloremque incidunt aut dolores dolor beatae praesentium voluptate facilis voluptates.</p>
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>
+                    Lični podaci
+                </legend>
+            <p>
+                <label for="firstName">Ime: </label>
+            <!--autofocus postavlja kursor u polje za kucanje, i samo jedan moze da stoji na stranici-->
+                <input type="text" name="firstName" id="firstName" autocomplete="on" placeholder="ime" required autofocus>
+            </p>
+            <p>
+                <label for="lastName">Prezime: </label>
+                <input type="text" name="lastName" id="lastName" autocomplete="on" placeholder="prezime" required>
+            </p>
+            <p>
+                <label for="password">Sifra: </label>
+                <input type="password" name="password" id="password" placeholder="sifra" required>
+            </p>
+            <p>
+                <label for="telefon">Telefon: </label>
+                <input type="tel" name="telefon" id="telefon" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{5}" required>
+            </p>
+            <p>
+                <label for="decade">Omiljena dekada: </label>
+                <input type="number" name="decade" id="decade" 
+                min="1950" max="2040" step="10" value="2000">
+            </p>
+            <p>
+                <label for="kafa">Omiljena kafa</label>
+                <!--multiple da izaberem vise iz liste, size koliko ce biti prikazano na  listi-->
+                <select name="kafa" id="kafa" multiple size="5">
+                    <optgroup label="Domaca pica">
+                        <option value="domaca kafa">Domaca kafa</option>
+                        <option value="ice kafa">Ice coffee</option>
+                    </optgroup>
+                    <optgroup label="Savremene kafe">  
+                        <option value="latte">Latte kafa</option>
+                        <option value="cappuccino">Kapucino</option>
+                        <option value="americano">Amerikana</option>
+                        <option value="ne volim kafu" selected>Ne volim kafu</option>
+                    </optgroup> 
+                    <option value="other">other</option>
+                </select>
+            </p>
+            <!--Druga vrsta liste-->
+            <p>
+                <label for="formula1">Omiljena ekipa formule 1</label>
+                <input type="text" name="formula1" id="formula1" list="lista-ekipa">
+                <datalist id="lista-ekipa">
+                    <option value="ferrari">
+                    <option value="maclaren">
+                    <option value="vilijams">
+                    <option value="mercedes">
+                    <option value="redbull">
+                    <option value="other">
+                </datalist>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                Koja je tvoj omiljeni tim formule?
+            </legend>
+            <p>
+                <input type="radio" id="ferari" name="tim" value="ferari">
+                <label for="ferari">Ferrari</label>
+            </p>
+            <p>
+                <input type="radio" id="mercedes" name="tim" value="mercedes">
+                <label for="mercedes">Mercedes</label>
+            </p>
+            <p>
+                <input type="radio" id="other" name="tim" value="other">
+                <label for="other">Other</label>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                Da li imaš ljubimca?
+            </legend>
+            <p>
+                <input type="checkbox" name="ljubimac" id="pas" value="pas">
+                <label for="pas">Pas</label>
+            </p>
+            <p>
+                <input type="checkbox" name="ljubimac" id="macka" value="macka">
+                <label for="macka">Mačka</label>
+            </p>
+            <p>
+                <input type="checkbox" name="ljubimac" id="riba" value="riba">
+                <label for="riba">Riba</label>
+            </p>
+            <p>
+                <input type="checkbox" name="ljubimac" id="otherLjubimac" value="otherLjubimac">
+                <label for="otherLjubimac">Drugi ljubimac</label>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Pošalji mi poruku</legend>
+            <label for="poruka">Napiši poruku</label>
+            <br>
+            <textarea name="poruka" id="poruka" cols="30" rows="10" placeholder="Otkucaj svoju poruku"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Pošalje</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Prosledi</button>
+        <button type="reset">Obriši</button>
+        </form>
+    </article>
+
+
+
+    <p>
+        <a href="/">Home</a>
+    </p>    
+</body>
+</html>
